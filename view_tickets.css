@@ -1,0 +1,86 @@
+/*Ticket Card*/
+.request-list .card {
+    border: 1px solid #dee2e6;
+    border-radius: 8px;
+    background-color: #fff;
+    padding: 15px;
+    transition: box-shadow 0.3s ease;
+}
+
+.request-list .card:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+/*Ticket info rows: ICON + TEXT*/
+.ticket-info-row {
+    display: flex;
+    align-items: center;
+    gap: 10px; 
+    margin-bottom: 8px;
+}
+
+.ticket-info-row i {
+    width: 24px;        
+    text-align: center;
+    flex-shrink: 0;
+    color: #333;
+    font-size: 16px;
+}
+
+.ticket-info-row p {
+    margin: 0;
+    font-size: 14px;
+    color: #333;
+}
+
+/*Info-left strong text */
+.request-list .info-left strong {
+    color: #222;
+}
+
+/*Info-right section (status, date, delete button) */
+.request-list .info-right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-between;
+    height: 100%;
+    flex-shrink: 0;
+    text-align: right;
+}
+
+.request-list .info-right p.small {
+    font-size: 12px;
+    color: #6c757d;
+    margin-bottom: 10px;
+}
+
+.request-list .info-right .badge {
+    font-size: 14px;
+    padding: 6px 12px;
+    border-radius: 12px;
+}
+
+/*Delete Button*/
+.request-list .info-right .delete-request {
+    font-size: 13px;
+    padding: 8px 14px;
+    border-radius: 6px;
+    margin-top: auto;
+    transition: background-color 0.2s ease;
+}
+
+/*Responsive*/
+@media (max-width: 768px) {
+    .request-list .info-left,
+    .request-list .info-right {
+        flex: 1 1 100%;
+        padding: 10px 0;
+        text-align: left;
+    }
+
+    .request-list .info-right {
+        align-items: flex-start;
+        margin-top: 10px;
+    }
+}
